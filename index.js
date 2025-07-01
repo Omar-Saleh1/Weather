@@ -5,7 +5,7 @@ btnSearch.addEventListener("click", function(){
 DaysWeather(searchInput.value)
 })
 async function DaysWeather(country) {
-  let weather = await fetch (`http://api.weatherapi.com/v1/forecast.json?key=195476a2f70e423a922153815252906&q=${country}&days=3`);
+let weather = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=195476a2f70e423a922153815252906&q=${country}&days=3`);  
   let apiData = await weather.json();
 
   let weatherData = apiData;
